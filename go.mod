@@ -1,3 +1,3 @@
-module diplomMarketPlace/marketplace-gateway
+module github.com/arandich/marketplace-gateway
 
 go 1.22
