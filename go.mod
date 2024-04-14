@@ -3,8 +3,8 @@ module github.com/arandich/marketplace-gateway
 go 1.22.1
 
 require (
-	github.com/arandich/marketplace-proto v0.0.0-20240414151403-c4ec388253d4
-	github.com/arandich/marketplace-sdk v0.0.0-20240414124703-942d9bad5899
+	github.com/arandich/marketplace-proto v0.0.0-20240414183126-63a479ab504b
+	github.com/arandich/marketplace-sdk v0.0.0-20240414183437-a1af24d30efc
 	github.com/creasty/defaults v1.7.0
 	github.com/goccy/go-json v0.10.2
 	github.com/gorilla/mux v1.8.1

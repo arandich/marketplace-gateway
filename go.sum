@@ -15,10 +15,10 @@ github.com/alecthomas/units v0.0.0-20190717042225-c3de453c63f4/go.mod h1:ybxpYRF
 github.com/alecthomas/units v0.0.0-20190924025748-f65c72e2690d/go.mod h1:rBZYJk541a8SKzHPHnH3zbiI+7dagKZ0cgpgrD7Fyho=
 github.com/apache/thrift v0.12.0/go.mod h1:cp2SuWMxlEZw2r+iP2GNCdIi4C1qmUzdZFSVb+bacwQ=
 github.com/apache/thrift v0.13.0/go.mod h1:cp2SuWMxlEZw2r+iP2GNCdIi4C1qmUzdZFSVb+bacwQ=
-github.com/arandich/marketplace-proto v0.0.0-20240414151403-c4ec388253d4 h1:22kvid2/0UaMB2/rEFq4Ogr9ed2sKPOiw2n7a/zpeIo=
-github.com/arandich/marketplace-proto v0.0.0-20240414151403-c4ec388253d4/go.mod h1:Vv9GK6Dj4vVLt4Qe105CRRrEZKjEoFcPDCpgTR69llU=
-github.com/arandich/marketplace-sdk v0.0.0-20240414124703-942d9bad5899 h1:RtuA5qkxgTFYPgsz8jDSKefZRmMZnn5kUUjjifHVWC4=
-github.com/arandich/marketplace-sdk v0.0.0-20240414124703-942d9bad5899/go.mod h1:cH8n7yt2P/rfyKZXz2Hm7aC1TsA771I+/2yBrutpav8=
+github.com/arandich/marketplace-proto v0.0.0-20240414183126-63a479ab504b h1:Xy1aH09Qpph7qF5o4B/1QAiwMVY+I+LKroKqGN9xi1Y=
+github.com/arandich/marketplace-proto v0.0.0-20240414183126-63a479ab504b/go.mod h1:Vv9GK6Dj4vVLt4Qe105CRRrEZKjEoFcPDCpgTR69llU=
+github.com/arandich/marketplace-sdk v0.0.0-20240414183437-a1af24d30efc h1:3JlBDy9SBuOaSrlJ0e+bUcTZCFqdOGAkSfHJRr2dTio=
+github.com/arandich/marketplace-sdk v0.0.0-20240414183437-a1af24d30efc/go.mod h1:LGDB9eX/h7kWgU/yvmXsVoOTbE36sJBFeNc3jKa53Fo=
 github.com/armon/circbuf v0.0.0-20150827004946-bbbad097214e/go.mod h1:3U/XgcO3hCbHZ8TKRvWD2dDTCfh9M9ya+I9JpbB7O8o=
 github.com/armon/go-metrics v0.0.0-20180917152333-f0300d1749da/go.mod h1:Q73ZrmVTwzkszR9V5SSuryQ31EELlFMUz1kKyl939pY=
 github.com/armon/go-radix v0.0.0-20180808171621-7fddfc383310/go.mod h1:ufUuZ+zHj4x4TnLV4JWEpy2hxWSpsRywHrMgIH9cCH8=
