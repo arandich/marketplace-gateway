@@ -56,3 +56,7 @@ func (m MarketplaceRepository) GetOrder(ctx context.Context, req *pb.GetOrderReq
 func (m MarketplaceRepository) InitOrder(ctx context.Context, req *pb.InitOrderRequest) (*pb.InitOrderResponse, error) {
 	return m.clients.OrderService.InitOrder(ctx, req)
 }
+
+func (m MarketplaceRepository) RegisterUser(ctx context.Context, req *pb.RegisterUserRequest) (*pb.RegisterUserResponse, error) {
+	return m.clients.IdService.RegisterUser(ctx, req)
+}

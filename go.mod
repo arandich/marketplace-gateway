@@ -3,7 +3,7 @@ module github.com/arandich/marketplace-gateway
 go 1.22.1
 
 require (
-	github.com/arandich/marketplace-proto v0.0.0-20240414105550-c5e1069ec661
+	github.com/arandich/marketplace-proto v0.0.0-20240414151403-c4ec388253d4
 	github.com/arandich/marketplace-sdk v0.0.0-20240414124703-942d9bad5899
 	github.com/creasty/defaults v1.7.0
 	github.com/goccy/go-json v0.10.2
@@ -16,7 +16,6 @@ require (
 	github.com/rs/cors v1.10.1
 	github.com/rs/zerolog v1.32.0
 	github.com/sethvargo/go-envconfig v1.0.1
-	gitlab.com/0xscore/degen-sdk v0.0.0-20240409095255-9c2abaa54cf3
 	google.golang.org/grpc v1.63.2
 	google.golang.org/protobuf v1.33.0
 )
@@ -26,9 +25,6 @@ require (
 	github.com/cenkalti/backoff/v4 v4.2.1 // indirect
 	github.com/cespare/xxhash/v2 v2.3.0 // indirect
 	github.com/desertbit/timer v0.0.0-20180107155436-c41aec40b27f // indirect
-	github.com/golang-jwt/jwt/v5 v5.2.1 // indirect
-	github.com/josharian/intern v1.0.0 // indirect
-	github.com/mailru/easyjson v0.7.7 // indirect
 	github.com/mattn/go-colorable v0.1.13 // indirect
 	github.com/mattn/go-isatty v0.0.20 // indirect
 	github.com/pkg/errors v0.9.1 // indirect

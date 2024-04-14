@@ -27,6 +27,7 @@ type IdRepository interface {
 	Auth(ctx context.Context, req *pb.AuthRequest) (*pb.AuthResponse, error)
 	InitHold(ctx context.Context, req *pb.InitHoldRequest) (*pb.InitHoldResponse, error)
 	GetUser(ctx context.Context, req *emptypb.Empty) (*pb.GetUserResponse, error)
+	RegisterUser(ctx context.Context, req *pb.RegisterUserRequest) (*pb.RegisterUserResponse, error)
 }
 
 var _ MarketplaceRepository = (*MarketplaceService)(nil)
@@ -74,4 +75,8 @@ func (s *MarketplaceService) GetUser(ctx context.Context, req *emptypb.Empty) (*
 
 func (s *MarketplaceService) Auth(ctx context.Context, req *pb.AuthRequest) (*pb.AuthResponse, error) {
 	return s.repository.Auth(ctx, req)
+}
+
+func (s *MarketplaceService) RegisterUser(ctx context.Context, req *pb.RegisterUserRequest) (*pb.RegisterUserResponse, error) {
+	return s.repository.RegisterUser(ctx, req)
 }
