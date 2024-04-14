@@ -1,0 +1,26 @@
+version: "3.5"
+
+services:
+  marketplace-gateway:
+    container_name: marketplace-gateway
+    restart: always
+    build:
+      context: .
+      dockerfile: ./docker/Dockerfile
+    ports:
+      - '0.0.0.0:7174:7174'
+      - '0.0.0.0:7979:7979'
+    env_file:
+      - './service.env'
+    networks:
+      - marketplace_network
+# Volumes.
+volumes:
+  postgres_id_storage:
+    driver: local
+
+# Networks.
+networks:
+  marketplace_network:
+    name: marketplace_network
+    external: true
