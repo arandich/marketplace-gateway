@@ -12,15 +12,16 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: SSH and update code
-        run: |
-          sshpass -p ${{ secrets.SSH_PASSWORD }} ssh ${{ secrets.SSH_USER }}@${{ secrets.HOST}} "cd /marketplace/${{ github.repository }} && git pull"
 
-      - name: Build Docker container
-        run: docker-compose -f /docker-compose.yml -d ${{ github.repository }} build
-
-      - name: Run specific service from docker-compose
-        run: docker-compose -f /docker-compose.yml up -d ${{ github.repository }}
-
-      - name: Clean up old Docker images
-        run: docker image prune -f
+      - name: Deploy code
+        uses: appleboy/ssh-action@v0.1.10
+        with:
+          host: ${{secrets.HOST}}
+          username: ${{secrets.SSH_USER}}
+          password: ${{secrets.SSH_PASSWORD}}
+          script: |
+            cd ./marketplace/${{ secrets.repository }} && git pull
+            docker network create marketplace_network || true
+            docker compose -p ${{ secrets.repository }} up -d --no-deps --build migrator
+            docker compose -p ${{ secrets.repository }} up -d --no-deps --build ${{ secrets.repository }}
+            docker image prune -f
